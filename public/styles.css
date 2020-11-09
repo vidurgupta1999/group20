@@ -62,7 +62,6 @@ html {
     border:1px solid black;
     margin: 0;
     padding: 0;
-    visibility: hidden;
     position: relative;
     /*perspective: 20px;*/
   }
@@ -88,6 +87,7 @@ html {
   }
   
   .suggestions li:nth-child(odd) {
+    visibility: hidden;
     transform: perspective(100px) rotateX(-3deg) translateY(3px);
     background: rgb(249,188,61);
     background: linear-gradient(90deg, rgba(249,188,61,1) 35%, rgba(239,255,0,1) 100%);
