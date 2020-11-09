@@ -8,7 +8,7 @@ function findMatches(wordToMatch, restaraunt) {
 return restaraunt.filter(place => {
   // here we need to figure out if the city or state matches what was searched
   const regex = new RegExp(wordToMatch, 'gi');
-  return place.name.match(regex) || place.zip.match(regex)
+  return place.name.match(regex) || place.category.match(regex)
 });
 }
 
@@ -21,10 +21,10 @@ const matchArray = findMatches(this.value, cities);
 const html = matchArray.map(place => {
   const regex = new RegExp(this.value, 'gi');
   const restarauntName = place.name.replace(regex, `<span class="hl">${this.value}</span>`);
-  const zipName = place.zip.replace(regex, `<span class="hl">${this.value}</span>`);
+  const categoryName = place.category.replace(regex, `<span class="hl">${this.value}</span>`);
   return `
     <li>
-      <span class="name">${cityName}, ${stateName}</span>
+      <span class="name">${restarauntName}, ${categoryName}</span>
       <span class="population">${numberWithCommas(place.population)}</span>
     </li>
   `;
