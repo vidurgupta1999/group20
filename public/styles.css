@@ -88,14 +88,14 @@ html {
     /* transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001); */
     background: rgb(249,188,61);
     background: linear-gradient(90deg, rgba(249,188,61,1) 35%, rgba(239,255,0,1) 100%);
-    display:flex;
+  
   }
   
   .suggestions li:nth-child(odd) {
     /* transform: perspective(100px) rotateX(-3deg) translateY(3px); */
     background: rgb(249,188,61);
     background: linear-gradient(90deg, rgba(249,188,61,1) 35%, rgba(239,255,0,1) 100%);
-    display: flex;
+   
   }
   
 
