@@ -43,6 +43,7 @@ const searchInput = document.querySelector('.search');
 const suggestions = document.querySelector('.suggestions');
 
 searchInput.addEventListener('change', displayMatches);
-searchInput.removeEventListener('change', false);
+searchInput.removeEventListener('change', displayMatches, false);
 searchInput.addEventListener('keyup', displayMatches);
+searchInput.removeEventListener('keyup', displayMatches, false);
 
