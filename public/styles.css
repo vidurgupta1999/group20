@@ -59,8 +59,10 @@ html {
   }
   
   .suggestions {
+    border:1px solid black;
     margin: 0;
     padding: 0;
+    visibility: hidden;
     position: relative;
     /*perspective: 20px;*/
   }
@@ -72,7 +74,7 @@ html {
     border-bottom: 1px solid #D8D8D8;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
     margin: 0;
-    /* padding: 20px; */
+    padding: 20px;
     transition: background 0.2s;
     display: flex;
     justify-content: space-between;
