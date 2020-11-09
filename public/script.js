@@ -27,9 +27,10 @@ const html = matchArray.map(place => {
   
     <li>
       <span class="name"><br>${restarauntName}</span>
-      <span> ${categoryName}</span>
       <br>
-      <span class="address_line_1Name"><br>${address_line_1Name}</span>
+      <span><br>${categoryName}</span>
+      <br>
+      <span class="address_line_1Name"><br${address_line_1Name}</span>
       <br>
     </li>
    
