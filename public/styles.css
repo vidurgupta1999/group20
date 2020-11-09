@@ -94,3 +94,6 @@ html {
   span.population {
     font-size: 15px;
   }
+  li > ul {
+    padding-bottom: 0.5em;
+  }
