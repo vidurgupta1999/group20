@@ -60,7 +60,7 @@ html {
   
   .suggestions {
     border:1px solid black;
-    margin: 0;
+    margin: 1.5px;
     padding: 0;
     position: relative;
     /*perspective: 20px;*/
