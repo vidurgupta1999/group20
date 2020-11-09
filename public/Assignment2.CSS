@@ -1,8 +1,4 @@
 /*CSS*/
-body {
-  background: #3895a8;
-}
-
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -10,6 +6,13 @@ body {
 
 .container {
   min-height: 100%;
+}
+.body {
+  font-size: 1.5;
+  line-height:1.6;
+  font-weight: 400;
+  font-family: 'Xanh Mono', monospace;
+  color: #dd460a;
 }
 
 .header {
