@@ -3,6 +3,13 @@
   display: flex;
   flex-direction: column;
 }
+.h1 {
+    display: block;
+    color: black;
+    font-weight: bold;
+    padding: 12px;
+    text-decoration: underline;
+}
 
 .container {
   min-height: 100%;
