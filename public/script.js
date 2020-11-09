@@ -25,7 +25,7 @@ const html = matchArray.map(place => {
   const address_line_1Name = place.address_line_1.replace(regex,`<span class="hl">${this.value}</span>`);
   return `
   
-    <li> $=0
+    <li>
       <span class="name">${restarauntName}</span>
       <br>
       <span> ${categoryName}</span>
