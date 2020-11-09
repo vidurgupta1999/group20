@@ -1,14 +1,14 @@
 const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
-const cities = [];
+const restaraunt = [];
 fetch(endpoint)
 .then(blob => blob.json())
-.then(data => cities.push(...data));
+.then(data => restaraunt.push(...data));
 
-function findMatches(wordToMatch, cities) {
-return cities.filter(place => {
+function findMatches(wordToMatch, restaraunt) {
+return restaraunt.filter(place => {
   // here we need to figure out if the city or state matches what was searched
   const regex = new RegExp(wordToMatch, 'gi');
-  return place.city.match(regex) || place.state.match(regex)
+  return place.name.match(regex) || place.zip.match(regex)
 });
 }
 
@@ -20,8 +20,8 @@ function displayMatches() {
 const matchArray = findMatches(this.value, cities);
 const html = matchArray.map(place => {
   const regex = new RegExp(this.value, 'gi');
-  const cityName = place.city.replace(regex, `<span class="hl">${this.value}</span>`);
-  const stateName = place.state.replace(regex, `<span class="hl">${this.value}</span>`);
+  const restarauntName = place.name.replace(regex, `<span class="hl">${this.value}</span>`);
+  const zipName = place.zip.replace(regex, `<span class="hl">${this.value}</span>`);
   return `
     <li>
       <span class="name">${cityName}, ${stateName}</span>
