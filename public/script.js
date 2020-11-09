@@ -1,4 +1,4 @@
-fetch('https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json%27') 
+fetch('https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json') 
         .then(response => response.json())
         .then(jsonData => {
             jsonData.forEach(function(obj){
