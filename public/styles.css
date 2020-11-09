@@ -78,7 +78,7 @@ html {
     box-shadow:none;
     margin: 0;
     padding: 20px;
-    /* transition: background 0.2s; */
+    transition: background 0.2s;
     display: none;
     justify-content: space-between;
     text-transform: none;
@@ -91,7 +91,7 @@ html {
   }
   
   .suggestions li:nth-child(odd) {
-    /* transform: perspective(100px) rotateX(-3deg) translateY(3px); */
+    transform: perspective(100px) rotateX(-3deg) translateY(3px);
     background: rgb(249,188,61);
     background: linear-gradient(90deg, rgba(249,188,61,1) 35%, rgba(239,255,0,1) 100%);
   }
