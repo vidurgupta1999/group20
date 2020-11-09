@@ -24,12 +24,15 @@ const html = matchArray.map(place => {
   const categoryName = place.category.replace(regex, `<span class="hl">${this.value}</span>`);
   const address_line_1Name = place.address_line_1.replace(regex,`<span class="hl">${this.value}</span>`);
   return `
-  
+  <ul class="suggestions>
     <li>
-      <span class="name">${restarauntName}</span><br>
-      <span> ${categoryName}</span><br>
+      <span class="name">${restarauntName}</span>
+      <br>
+      <span> ${categoryName}</span>
+      <br>
       <span class="address_line_1Name">${address_line_1Name}</span>
     </li>
+    </ul>
   `;
   
 }).join('');
