@@ -42,7 +42,7 @@ function displayMatches() {
 const searchInput = document.querySelector('.search');
 const suggestions = document.querySelector('.suggestions');
 
-searchInput.addEventListener('change', displayMatches, displayMatches
-? { displayMatches: true } : false);
+searchInput.addEventListener('change', displayMatches);
+searchInput.removeEventListener('change', false);
 searchInput.addEventListener('keyup', displayMatches);
 
