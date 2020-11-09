@@ -22,10 +22,12 @@ const html = matchArray.map(place => {
   const regex = new RegExp(this.value, 'gi');
   const restarauntName = place.name.replace(regex, `<span class="hl">${this.value}</span>`);
   const categoryName = place.category.replace(regex, `<span class="hl">${this.value}</span>`);
+  const addressName = place.address.replace(regex,`<span class="hl">${this.value}</span>`);
   return `
     <li>
-      <span class="name">${restarauntName}, ${categoryName}</span>
-      <span class="population">${numberWithCommas(place.population)}</span>
+      <span class="name">${restarauntName}</span>
+      <span> class="category">${categoryName}</span>
+      <span class="address">${addressName}</span>
     </li>
   `;
 }).join('');
