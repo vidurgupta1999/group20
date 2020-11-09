@@ -30,7 +30,7 @@ const html = matchArray.map(place => {
       <br>
       <span> ${categoryName}</span>
       <br>
-      <span class="address_line_1Name">${address_line_1Name}</span>
+      <span class="address_line_1Name"><br>${address_line_1Name}</span>
       <br>
     </li>
    
