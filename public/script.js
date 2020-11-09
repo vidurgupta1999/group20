@@ -11,31 +11,6 @@ function findMatches(wordToMatch, restaraunt) {
         return place.name.match(regex) || place.category.match(regex)
     });
 }
-// function search() {
-//     // Declare variables
-//     var input, filter, ul, li, a, i;
-//     input = document.getElementById('searchInput');
-//     filter = input.value.toUpperCase();
-//     ul = document.getElementById("restaraunts");
-//     li = ul.getElementsByTagName('li');
-
-//     if (input.value.length == 0) {
-//         ul.style.display = "none";
-//         return;
-//     } else {
-//         ul.style.display = "block";
-
-//         if (document.GetElementById('searchInput').value == '')
-//             for (i = 0; i < li.length; i++) {
-//                 a = li[i].getElementsByTagName("a")[0];
-//                 if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-//                     li[i].style.display = "block";
-//                 }
-//             } else {
-//             li[i].style.display = "none";
-//         }
-//     }
-// }
 
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
@@ -48,50 +23,17 @@ function displayMatches() {
         const restarauntName = place.name.replace(regex, `<span class="hl">${this.value}</span>`);
         const categoryName = place.category.replace(regex, `<span class="hl">${this.value}</span>`);
         const address_line_1Name = place.address_line_1.replace(regex, `<span class="hl">${this.value}</span>`);
-        var input, filter, ul, li, a, i;
-        input = document.getElementById('searchInput');
-        filter = input.value.toUpperCase();
-        ul = document.getElementById("restaraunts");
-        li = ul.getElementsByTagName('li');
-    
-        if(input.value.length == 0){
-            ul.style.displayMatches = "none";
-            return;
-        }else{
-            ul.style.displayMatches = "block";
-        }
-     
-        for (i = 0; i < li.length; i++) {
-            a = li[i].getElementsByTagName("a")[0];
-            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                // li[i].style.display = 
-                return `
+        return `
   
-                <li> 
-                  <span class="name">${restarauntName}</span>
-                  <br>
-                  <span> ${categoryName}</span>
-                  <br>
-                  <span class="address_line_1Name">${address_line_1Name}</span>
-                </li>
-               
-              `;
-            } else {
-                li[i].style.display = "none";
-            }
-        }
-    
-//         return `
-  
-//     <li> 
-//       <span class="name">${restarauntName}</span>
-//       <br>
-//       <span> ${categoryName}</span>
-//       <br>
-//       <span class="address_line_1Name">${address_line_1Name}</span>
-//     </li>
+    <li> 
+      <span class="name">${restarauntName}</span>
+      <br>
+      <span> ${categoryName}</span>
+      <br>
+      <span class="address_line_1Name">${address_line_1Name}</span>
+    </li>
    
-//   `;
+  `;
 
     }).join('');
     suggestions.innerHTML = html;
