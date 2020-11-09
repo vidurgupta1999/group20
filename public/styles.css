@@ -20,7 +20,7 @@ address {
     display: block;
     font-style: italic;
   } 
-  
+
 html {
     box-sizing: border-box;
     background: #0000FF;
@@ -65,7 +65,11 @@ html {
     position: relative;
     /*perspective: 20px;*/
   }
-  
+  #navContainer ul {
+      width: auto;
+      padding: 0px;
+      border-style:none;
+  }
   .suggestions li {
     background: rgb(249,188,61);
     background: linear-gradient(90deg, rgba(249,188,61,1) 35%, rgba(239,255,0,1) 100%);
