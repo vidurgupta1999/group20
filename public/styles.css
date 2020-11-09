@@ -1,8 +1,5 @@
-/* CSS
-.wrapper {
-  display: flex;
-  flex-direction: column;
-}
+/* /* CSS */
+
 h1 {
     display: block;
     color: black;
@@ -11,7 +8,7 @@ h1 {
     text-decoration: underline;
 }
 
-.container {
+/* .container {
   min-height: 100%;
 }
 body {
@@ -32,7 +29,7 @@ body {
   margin: 0;
   margin-bottom: 5px;
   padding: 4px 8px;
-  border-radius: 4px;
+  border-radius: 4px; */
 }
 
 /* Enter YOUR lab styles after this line */
