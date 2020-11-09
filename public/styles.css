@@ -91,9 +91,4 @@ html {
     background: linear-gradient(90deg, rgba(249,188,61,1) 35%, rgba(239,255,0,1) 100%);
   }
   
-  span.population {
-    font-size: 15px;
-  }
-  li > ul {
-    padding-bottom: 0.5em;
-  }
+
