@@ -11,6 +11,15 @@ return restaraunt.filter(place => {
   return place.name.match(regex) || place.category.match(regex)
 });
 }
+if (document.GetElementById('searchInput').value == '')
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "block";
+}
+    } else {
+        li[i].style.display = "none";
+}
 
 function numberWithCommas(x) {
 return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
