@@ -54,7 +54,7 @@ html {
     z-index: 2;
     border-radius: 5px;
     font-size: 40px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0 5px rgba(236, 13, 13, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
   }
   
   .suggestions {
@@ -89,8 +89,4 @@ html {
   
   span.population {
     font-size: 15px;
-  }
-  
-  .hl {
-    background: #ffc600;
   }
