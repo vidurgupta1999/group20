@@ -1,3 +1,4 @@
+
 {
   "name": "inst377-fa2020",
   "version": "1.0.0",
@@ -28,11 +29,9 @@
     "cypress": "^4.12.1",
     "cypress-html-validate": "^1.2.2",
     "cypress-wait-until": "^1.7.1",
-    "dotenv": "^8.2.0",
     "eslint": "^7.4.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-cypress": "^2.11.1",
-    "eslint-plugin-import": "^2.22.0",
-    "recursive-readdir": "^2.2.2"
+    "eslint-plugin-import": "^2.22.0"
   }
 }
