@@ -48,7 +48,8 @@ function displayMatches() {
         const restarauntName = place.name.replace(regex, `<span class="hl">${this.value}</span>`);
         const categoryName = place.category.replace(regex, `<span class="hl">${this.value}</span>`);
         const address_line_1Name = place.address_line_1.replace(regex, `<span class="hl">${this.value}</span>`);
-
+        var input, filter, ul, li, a, i;
+        input = document.getElementById('searchInput');
         if(input.value.length === false) {
             ul.style.displayMatches = "none"
         } else {
