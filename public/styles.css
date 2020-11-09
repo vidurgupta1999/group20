@@ -8,11 +8,22 @@ h1 {
     text-decoration: underline;
     text-align: center;
 }
+body {
+    font-size:1.5;
+    line-height:1.6;
+    font-weight:400;
+    font-family: 'Xanh Mono', monospace;
+}
+
+address { 
+    display: block;
+    font-style: italic;
+  } 
 
 html {
     box-sizing: border-box;
     background: #ffc600;
-    font-family: 'helvetica neue';
+    font-family: 'Xanh Mono', monospace;
     font-size: 20px;
     font-weight: 200;
   }
