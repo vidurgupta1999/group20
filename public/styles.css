@@ -13,6 +13,8 @@ body {
     line-height:1.6;
     font-weight:400;
     font-family: 'Xanh Mono', monospace;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(29,121,9,1) 35%, rgba(0,212,255,1) 100%);
 }
 
 address { 
