@@ -60,10 +60,10 @@ html {
   
   .suggestions {
     border:1px solid black;
-    margin: 1.5px;
+    margin: 0;
     padding: 0;
     position: relative;
-    /*perspective: 20px;*/
+    perspective: 20px;
   }
   #navContainer ul {
       width: auto;
