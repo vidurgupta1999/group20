@@ -17,7 +17,7 @@ return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
 
 function displayMatches() {
-const matchArray = findMatches(this.value, cities);
+const matchArray = findMatches(this.value, restaraunt);
 const html = matchArray.map(place => {
   const regex = new RegExp(this.value, 'gi');
   const restarauntName = place.name.replace(regex, `<span class="hl">${this.value}</span>`);
@@ -30,7 +30,7 @@ const html = matchArray.map(place => {
   `;
 }).join('');
 suggestions.innerHTML = html;
-}
+}   
 
 const searchInput = document.querySelector('.search');
 const suggestions = document.querySelector('.suggestions');
