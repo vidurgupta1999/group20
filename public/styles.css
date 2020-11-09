@@ -26,11 +26,10 @@ address {
     display: block;
     font-style: italic;
   } 
-
-
   
   *, *:before, *:after {
     box-sizing: inherit;
+    display: hidden;
   }
   
   input {
