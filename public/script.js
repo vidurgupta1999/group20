@@ -28,7 +28,7 @@ function displayMatches() {
     <li> 
       <span class="name">${restarauntName}</span>
       <br>
-      <span> ${categoryName}</span>
+      <span clas="category">${categoryName}</span>
       <br>
       <span class="address_line_1Name">${address_line_1Name}</span>
     </li>
