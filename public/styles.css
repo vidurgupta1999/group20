@@ -29,7 +29,7 @@ address {
   
   *, *:before, *:after {
     box-sizing: inherit;
-    display: hidden;
+  
   }
   
   input {
