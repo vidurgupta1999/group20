@@ -1,5 +1,11 @@
 /* /* CSS */
-
+html {
+    box-sizing: border-box;
+    background: #0000FF;
+    font-family: 'Xanh Mono', monospace;
+    font-size: 10px;
+    font-weight: 200;
+  }
 h1 {
     display: block;
     color: black;
@@ -21,13 +27,7 @@ address {
     font-style: italic;
   } 
 
-html {
-    box-sizing: border-box;
-    background: #0000FF;
-    font-family: 'Xanh Mono', monospace;
-    font-size: 10px;
-    font-weight: 200;
-  }
+
   
   *, *:before, *:after {
     box-sizing: inherit;
