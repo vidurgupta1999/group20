@@ -48,6 +48,12 @@ function displayMatches() {
         const restarauntName = place.name.replace(regex, `<span class="hl">${this.value}</span>`);
         const categoryName = place.category.replace(regex, `<span class="hl">${this.value}</span>`);
         const address_line_1Name = place.address_line_1.replace(regex, `<span class="hl">${this.value}</span>`);
+
+        if(input.value.length === false) {
+            ul.style.displayMatches = "none"
+        } else {
+            ul.style.displayMatches = "block"
+        }
         return `
   
     <li> 
