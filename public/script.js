@@ -50,22 +50,48 @@ function displayMatches() {
         const address_line_1Name = place.address_line_1.replace(regex, `<span class="hl">${this.value}</span>`);
         var input, filter, ul, li, a, i;
         input = document.getElementById('searchInput');
-        if(input.value.length === false) {
-            ul.style.displayMatches = "none"
-        } else {
-            ul.style.displayMatches = "block"
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("restaraunts");
+        li = ul.getElementsByTagName('li');
+    
+        if(input.value.length == 0){
+            ul.style.displayMatches = "none";
+            return;
+        }else{
+            ul.style.displayMatches = "block";
         }
-        return `
+     
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                // li[i].style.display = 
+                return `
   
-    <li> 
-      <span class="name">${restarauntName}</span>
-      <br>
-      <span> ${categoryName}</span>
-      <br>
-      <span class="address_line_1Name">${address_line_1Name}</span>
-    </li>
+                <li> 
+                  <span class="name">${restarauntName}</span>
+                  <br>
+                  <span> ${categoryName}</span>
+                  <br>
+                  <span class="address_line_1Name">${address_line_1Name}</span>
+                </li>
+               
+              `;
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    
+//         return `
+  
+//     <li> 
+//       <span class="name">${restarauntName}</span>
+//       <br>
+//       <span> ${categoryName}</span>
+//       <br>
+//       <span class="address_line_1Name">${address_line_1Name}</span>
+//     </li>
    
-  `;
+//   `;
 
     }).join('');
     suggestions.innerHTML = html;
